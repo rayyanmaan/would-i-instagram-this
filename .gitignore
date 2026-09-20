@@ -1,0 +1,21 @@
+# Source photographs are personal and are never committed
+photos_for_ml/
+*.jpg
+*.jpeg
+!figures/*.png
+
+# Generated artefacts
+all_captions.csv
+fig_*.png
+*.pth
+*.pt
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS
+.DS_Store
