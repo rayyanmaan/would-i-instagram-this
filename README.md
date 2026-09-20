@@ -48,7 +48,13 @@ Nothing here beat the opaque CLIP baseline. But the pipeline made CLIP's black b
 | **II** | Can learned visual features close the gap? | Frozen + fine-tuned ResNet-18, SVM-RBF, CLIP zero-shot | 0.817–0.883 — better, but nothing explains itself |
 | **III** | Can it explain itself? | BLIP→MiniLM captions, fine-tuned ViT-B/16 + attention rollout | 0.833 — and for the first time, *readable* |
 
-→ **[`notebooks/iteration-3-captions-and-attention.ipynb`](notebooks/iteration-3-captions-and-attention.ipynb)** — the full pipeline with every figure and result preserved inline.
+Each notebook is the complete pipeline for that iteration, with every figure and printed result preserved inline:
+
+- **[`iteration-1-pixel-statistics.ipynb`](notebooks/iteration-1-pixel-statistics.ipynb)**
+- **[`iteration-2-learned-visual-features.ipynb`](notebooks/iteration-2-learned-visual-features.ipynb)**
+- **[`iteration-3-captions-and-attention.ipynb`](notebooks/iteration-3-captions-and-attention.ipynb)**
+
+<sub>A note on one number: Iteration I's own notebook reports **0.800** for the handcrafted model. The **0.783** used here and in the paper is the value after that pipeline was re-run on the identical split in Iteration II, and it is the figure carried forward through every later comparison.</sub>
 
 ## Repository
 
